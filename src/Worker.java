@@ -24,12 +24,16 @@ public class Worker extends Person {
 
 
 
+
     @Override
 double averageSalaryCalculation(){
 
     return CalculatorUtils.averageForTwo(getMinSelary(), getMaxSelary());
 
 
+}
+public void goToWork(){
+    System.out.println("Я счастливо шагаю на работу");
 }
 
 

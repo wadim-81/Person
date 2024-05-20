@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Random;
 
 public class Pensioner extends Person{
 
@@ -24,4 +25,16 @@ public class Pensioner extends Person{
     double averageSalaryCalculation() {
         return CalculatorUtils.averageForThree(getMinSelary(),getMaxSelary(),PENSION_FOR_ALL);
     }
-}
+
+    public void goToWork() {
+        Random random = new Random();
+
+        int ran = random.nextInt();
+
+        if (ran != 0) {
+            System.out.println("Я вообще-то на пенсии");
+        }
+        else  {
+            System.out.println("Ладно, немного поработаю");
+        }
+    }}
