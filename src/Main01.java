@@ -11,5 +11,7 @@ public class Main01 {
         System.out.println(pensioner.toString());
          pensioner.info();
          worker.info();
+         pensioner.goToWork();
+         worker.goToWork();
     }
 }

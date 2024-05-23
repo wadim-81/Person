@@ -29,7 +29,7 @@ public class Pensioner extends Person{
     public void goToWork() {
         Random random = new Random();
 
-        int ran = random.nextInt();
+        int ran = random.nextInt(6);
 
         if (ran != 0) {
             System.out.println("Я вообще-то на пенсии");
